@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Personal Portfolio  |  Responsive website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Portfolio</a>
+		<div class="toggle"></div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Testimonials</a></li>
+			<li><a href="#">Contact</a></li>
+
+		</ul>
+	</header>
+	<section class="banner">
+		<div class="textBx">
+			<h2>Hello, Im<br><span>Chris Quintero,</span></h2>
+			<h3>Currently I am a Student at Eatern Oregon University </h3>
+			<a href="#" class="btn">About me</a>
+		</div>
+	</section>
+	<section class="about">
+		<div class="heading">
+			<h2>About Me</h2>
+		</div>
+		<div class="content">
+			<div class="contentBx w50">
+				<h3>Currently I am a Student at Eatern Oregon University</h3>
+				<p>Hello, I am currently a Student-Athlete at Eastern Oregon University and I am studying Computer Science. I have been programming for about 6 years and when I first started I knew this was for me. I am also a first-generation college student who is looking to pave the way for my family and this will be the first step in showing them anything is possible with hard work!<br><br></p>
+			</div>
+			<div class="w50">
+				<img src="img1.jpg" class="img">
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header = document.querySelector('header')
+			header.classList.toggle('sticky', window.scrollY>0);
+		});
+	</script>
+</body>
+</html>
